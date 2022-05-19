@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid;
+  }
+
+#right, #bottom, #inventoryTable {
+    text-align: justify;
+    text-align: center;
+}
+
+body {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 50px;
+    font-size: .6em;
+    font-family: bold;
+    font-family: arial;
+    color:green;
+}

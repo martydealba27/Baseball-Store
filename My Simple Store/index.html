@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baseball Store</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="storeStarter.js" defer></script>
+    </head>
+    <body>
+        <!-- store name -->
+        <h1>Marty's Baseball Store</h1>
+
+        <img src="oracle.jpeg" alt="storeatpark" height="150px" width="220px"></a>
+      
+    
+        <!-- here is the inventory table 
+            this will have the id in storeStarter as inventoryTable-->
+        <div id="inventoryTable"></div>
+
+        <!-- our div rows on the right
+            these are item / quantity 
+            add item function will be here-->
+
+            <div id="right">
+            <label for="item">Item: </label>
+            <input type="text" id="item">
+            <br>
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="quantity">
+            <br>
+            <br>
+            <button id="addItem" onclick="addItem()">Add Item</button>
+            <br>
+            <button id="newOrder" onclick="newOrder()">New Order</button> 
+            </div>
+
+            <div id="bottom">
+            <h3>Invoice Total $<span id="total"></span></h3>
+            <textarea name="invoice" id="invoice" cols="30" rows="8"></textarea>
+            </div>
+
+        </div>
+    </body>
+</html>
