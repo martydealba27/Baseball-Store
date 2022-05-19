@@ -122,3 +122,32 @@ function findPrice(useritem)
     //not found, return -1
     return -1;
 }
+/*)
+Additional correction
+If I click the button without valid input there should just be error message, nothing in receipt.  You are missing code to validate that data is there.  addItem needs to start with if statement to check:
+
+//is data there?
+if (document.getElementById("item").value == "" || document.getElementById("quantity").value == ""){
+     alert("missing data");
+}
+else{
+     //get itemname
+     //call function to get itemprice
+     //was it found?
+     if (itemprice != -1){
+           //get quantity
+           //calculate itemtotal
+           //add to grandtotal
+           //display receipt
+          //display grandtotal
+     }
+     else{
+           alert("item not found");
+     }
+There are also some unmatched tags in your .html file.  The problem is here
+<img src="oracle.jpeg" alt="storeatpark" height="150px" width="220px"></a>
+You don't need </a>, there is no <a> to match it.
+newOrder function also needs to reset the grandtotal variable:
+grandtotal = 0;
+textarea always needs to use .value, not .innerHTML
+*/
